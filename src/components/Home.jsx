@@ -37,7 +37,6 @@ const Home = () => {
 
     // Change page
     const paginate = (pageNumber) => {
-        console.log(pageNumber)
         setCurrentPage(pageNumber)
     };
 

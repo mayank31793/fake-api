@@ -8,15 +8,12 @@ const Post = (props) => {
     const [openModal,setOpenModal] = useState({});
 
     const handleInfo = (info) => {
-        console.log(info);
         setOpenModal(info);
     }
 
     if(props.loading){
         return <Loader />
     }
-
-    console.log(props.search);
 
     return (
         <div>
