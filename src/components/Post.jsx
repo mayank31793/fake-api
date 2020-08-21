@@ -22,6 +22,7 @@ const Post = (props) => {
                     {props.postData.filter((response) => response.first_name.toLowerCase().indexOf(props.search.toLowerCase()) !== -1).map((res,i) => (
                         <tr key={i} onClick={() => handleInfo(res)}>
                             <td>
+                                <label htmlFor="modal"></label>
                                 <div className="imageContainer">
                                     <img src={res.avatar} />
                                 </div>        
